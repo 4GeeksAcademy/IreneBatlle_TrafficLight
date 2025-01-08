@@ -1,13 +1,13 @@
-//import react into the bundle
+// Importar React
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// include your styles into the webpack bundle
-import "../styles/index.css";
+// Incluir tus estilos en el bundle de Webpack
+import '../styles/index.css'; // Asegúrate de que la ruta sea correcta
 
-//import your own components
-import Home from "./component/home.jsx";
+// Importar tus componentes
+import Semaforo from "./component/semaforo.jsx";
 
-//render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
-
+// Renderizar tu aplicación de React
+const root = ReactDOM.createRoot(document.querySelector('#root'));
+root.render(<Semaforo />);
